@@ -1,0 +1,37 @@
+@import '../../index.scss';
+
+.cultivation-members-container {
+  border: 2px solid $border-color;
+  margin-top: 5vh;
+}
+
+.add-user-btn {
+  height: 32px;
+  border: 1px solid $btn-border-color;
+  border-radius: 3px;
+  color: $btn-text-color;
+  margin: 30px 0 30px 20px;
+  padding: 0 10px;
+  gap: 5px;
+  @include flex-center;
+
+  &:hover {
+    background: $hover-bg-color;
+    color: $hover-text-color;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.table-head {
+  font-weight: 500;
+}
+
+.table-head-row {
+  background: $table-head-bg-color;
+  border-bottom: 2px solid $table-head-border-color;
+  height: 50px;
+}
