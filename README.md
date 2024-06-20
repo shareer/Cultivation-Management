@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Getting Started
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application To manage a cultivation in the greenhouse, requirement includes 
 
-Currently, two official plugins are available:
+- Adding new users to a cultivation
+- Deleting a user from a cultivation
+- Changing role of a user in the cultivation
+- Search functionality to filter the users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Depending on their designated roles, users will possess specific permissions within the cultivation. These roles are adjustable, allowing for changes as needed.
 
-## Expanding the ESLint configuration
+In the interface, there is a dropdown menu currently displaying two dummy cultivation options (no API integration is implemented here as it's outside the assignment's scope). Upon selecting a cultivation, the system lists all users associated with that cultivation. Users can add new members to the cultivation by clicking a button, which opens a popup displaying a list of users. From this popup, users can be selected individually or in multiples and added to the cultivation's member list.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Additionally, users have the ability to modify roles and delete members directly from the user list within the cultivation.
 
-- Configure the top-level `parserOptions` property like this:
+## Development server
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+After cloning the project in the local machine run `npm install` to install the dependencies and followed by `npm run dev` to run server locally. Navigate to `http://localhost:5173/`. To run unit test use 'npm run test' command.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Framework/Libraries Used
+
+- React 18.2.0
+- TypeScript ^5.2.2
+- Tailwind for styling along with SCSS
+- Vitest for unit testing
+- Redux Toolkit for state management
+
+This project was developed using Node.js and npm. Below are the versions used:
+
+- Node.js: v20.13.1
+- npm: 10.5.2
+
