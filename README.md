@@ -1,6 +1,6 @@
 # Getting Started
 
-This project is a React application To manage a cultivation in the greenhouse, requirement includes 
+This project is a React application To manage a cultivation, requirement includes 
 
 - Adding new users to a cultivation
 - Deleting a user from a cultivation
